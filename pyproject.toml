@@ -1,0 +1,53 @@
+[project]
+name = "prediction-profils-accidents-graves"
+version = "0.1.0"
+description = "Projet de prédiction des profils à risque d'incidents graves dans le cadre du cours de Big Data à CY Tech."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [
+    {name = "Charles-Meldhine Madi Mnemoi", email = "charlesmeldhine.madimnemoi@gmail.com"}
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+
+dependencies = [
+    "notebook>=7.3.2",
+    "pandas>=2.2.3",
+    "pyarrow>=18.1.0",
+    "scikit-learn>=1.6.0",
+    "seaborn>=0.13.2",
+    "tqdm>=4.67.1",
+]
+
+[project.urls]
+"Bug Tracker" = "https://github.com/cmnemoi/prediction_profils_accidents_graves/issues"
+Changelog = "https://github.com/cmnemoi/prediction_profils_accidents_graves/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/cmnemoi/prediction_profils_accidents_graves/"
+Repository = "https://github.com/cmnemoi/prediction_profils_accidents_graves/"
+
+[dependency-groups]
+dev = [
+    "pytest-watcher>=0.4.3",
+    "python-semantic-release>=9.15.2",
+]
+lint = [
+    "ruff>=0.8.6",
+]
+test = [
+    "pytest>=8.3.4",
+    "pytest-cov>=6.0.0",
+]
+
+[tool.semantic_release]
+version_toml = ["pyproject.toml:project.version"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["prediction_profils_accidents_graves"]

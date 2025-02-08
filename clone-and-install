@@ -1,0 +1,6 @@
+#!/bin/bash
+
+set -e
+
+git clone https://github.com/cmnemoi/prediction_profils_accidents_graves.git && cd prediction_profils_accidents_graves
+make
