@@ -15,7 +15,7 @@ git config --global user.email LeMailDeVotreCompteGithub
 ```
 
 - Générez une paire de clés SSH :
-  - `ssh-keygen -t ed25519 -C "Clé SSH pour le dépôt prediction_profils_accidents_graves (https://github.com/cmnemoi/prediction_profils_accidents_graves)"`
+  - `ssh-keygen -t ed25519 -C "Clé SSH pour le dépôt prediction_profils_accidents_graves (https://github.com/Bilelly/Road-Accident-Risk-Prediction)"`
   - Appuyez sur `Entrée` jusqu'à que la clé soit générée ;
 - Ajoutez la clé SSH à votre agent SSH : `eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_ed25519` ;
 - Affichez la clé SSH générée : `cat ~/.ssh/id_ed25519.pub` et copiez-la ;
@@ -23,7 +23,7 @@ git config --global user.email LeMailDeVotreCompteGithub
 
 ## Cloner le dépôt
 
-Dans un terminal (Git) Bash, clonez le dépôt avec : `git clone git@github.com:cmnemoi/prediction_profils_accidents_graves.git && cd prediction_profils_accidents_graves`
+Dans un terminal (Git) Bash, clonez le dépôt avec : `git clone git@github.com:Bilelly/Road-Accident-Risk-Prediction.git && cd Road-Accident-Risk-Prediction`
 
 # Installation
 
