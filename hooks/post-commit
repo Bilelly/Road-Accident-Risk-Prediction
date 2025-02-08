@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Skip if already in post-commit hook
+if [ "$INSIDE_POST_COMMIT" = "1" ]; then
+    exit 0
+fi
+
+export INSIDE_POST_COMMIT=1
+make semantic-release
