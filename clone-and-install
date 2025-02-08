@@ -2,5 +2,5 @@
 
 set -e
 
-git clone https://github.com/cmnemoi/prediction_profils_accidents_graves.git && cd prediction_profils_accidents_graves
+git clone https://github.com/Bilelly/Road-Accident-Risk-Prediction && cd Road-Accident-Risk-Prediction
 make
